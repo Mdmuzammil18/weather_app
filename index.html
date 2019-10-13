@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box1">
+        <!-- displaying the results  -->
+        <h2 id="city">Input any city name in the world</h2>
+        <div class="box2">
+          <div class="temp-wrapper">
+            <img src="" alt="" id="icon" />
+            <h4 id="temp"></h4>
+          </div>
+          <!-- Weather app inputs -->
+          <div class="Weather">
+            <input type="text" placeholder="Location?" id="search-txt" />
+            <i
+              class="fa fa-search fa-2x onSearch"
+              onclick="findWeatherDetails()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9L1nE6idZ2kaIZHRkJoyUV0gS4lyv-48&libraries=places"></script>
+  <script src="PlacesAPI.js"></script>
+</html>
